@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipment Report</title>
+    <link rel="stylesheet" href="equipreport.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer" charset="UTF-8"></script>
+</head>
+<body>
+
+    
+
+    <div class="wrapper">
+
+        <div class="header">
+            <div class="header-menu">
+                <div class="title-image">
+                    <img src="images/image-removebg-preview 2.png" alt="Title Image">
+                </div>
+                <div class="sidebar-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </div>
+        <!--header menu end-->
+        <!--sidebar start-->
+        <div class="sidebar">
+            <div class="sidebar-menu">
+                <center class="profile">
+                    <i class="fa-solid fa-image"></i>
+                    <p>Rose Ann</p>
+                    <p>De Guzman</p>
+                </center>
+                <li class="item" id="inventory">
+                    <a href="#inventory" class="menu-btn">
+                        <i class="fa-solid fa-file"></i><span>E-Monitoring Sheet <i class="fa-solid fa-caret-down"></i></span>
+                    </a>
+                    <div class="sub-menu">
+                        <a href="#"> <i class="fa-solid fa-chevron-right"></i><span>Laboratory</span></a>
+                        <a href="#"> <i class="fa-solid fa-chevron-right"></i><span>Codes</span></a>
+                    </div>
+                </li>
+                <li class="item" id="reports">
+                    <a href="#reports" class="menu-btn">
+                        <i class="fa-solid fa-file-pen"></i></i><span>Report <i class="fa-solid fa-caret-down"></i></span>
+                    </a>
+                    <div class="sub-menu">
+                        <a href="#"> <i class="fa-solid fa-chevron-right"></i><span>Equipment Report Viewing</span></a>
+                        <a href="#"> <i class="fa-solid fa-chevron-right"></i><span>Report Equipment</span></a>
+                    </div>
+                </li>
+                <li class="item" id="user-management">
+                    <a href="#user-management" class="menu-btn">
+                        <i class="fa-solid fa-file-export"></i><span>Equipment Request <i class="fa-solid fa-caret-down"></i></span>
+                    </a>
+                    <div class="sub-menu">
+                        <a href="#"> <i class="fa-solid fa-chevron-right"></i><span>Manage Users</span></a>
+                        <a href="#"> <i class="fa-solid fa-chevron-right"></i><span>Create Users</span></a>
+                    </div>
+                </li>
+            </div>
+        </div>
+        <!--sidebar end-->
+        <!--main container start-->
+        <div class="main-container">
+            <h1 class="main--title">EQUIPMENT REPORT</h1>
+                <div class="form-box">
+                    <h1><img src="images/image-removebg-preview 2.png" alt="Form Title"></h1>
+                    <form>
+                        <div class="input-group">
+                            <div class="input-field">
+                                <input type="text" placeholder="Username">
+                            </div>
+
+                            <div class="input-field">
+                                <input type="text" placeholder="Laboratory">
+                            </div>
+
+                            <div class="input-field">
+                                <input type="text" placeholder="PC Unit no.">
+                            </div>
+
+                            <div class="input-field">
+                                <input type="text" placeholder="Remarks">
+                            </div>
+                        </div>
+                        <div class="btn-field">
+                            <button type="button" id="cancelbtn">CANCEL</button>
+                            <button type="button"  id="submitbtn" class="disable">SUBMIT</button>
+                        </div>
+                    </form>
+                    
+                </div>
+            </div>
+        <!--main container end-->
+
+    </div>
+    <!--wrapper end-->
+    <script type="text/javascript">
+        $(document).ready(function(){
+          $(".sidebar-btn").click(function(){
+            $(".wrapper").toggleClass("collapse");
+          })
+        })
+    </script>
+    <script>
+
+        let cancelbtn = document.querySelector('#cancelbtn');
+        let inputs = document.querySelectorAll('input');
+
+
+    cancelbtn.addEventListener('click',()=>{
+        inputs.forEach(input => input.value = '')
+    })    
+
+    </script>
+
+</body>
+</html>
