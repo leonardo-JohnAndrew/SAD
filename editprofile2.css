@@ -1,0 +1,86 @@
+body {
+    background-color: #f8f9fa;
+    font-family: "Poppins", sans-serif;
+  }
+  .profile-form {
+    max-width: 400px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    font-weight: 600;
+  }
+  .profile-form h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 700;
+  }
+
+  .profile-form {
+    max-width: 400px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+  }
+  .profile-form h2 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .profile-picture-container {
+    position: relative;
+    margin: 0 auto 20px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .profile-picture {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .change-profile-pic {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .change-profile-pic:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  .change-profile-pic input[type="file"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  .btn-primary {
+    background-color: #192C3D; 
+    border-color: #192C3D; 
+  }
+  
+  .btn-primary:hover {
+    background-color: #2f5373; 
+    border-color: #2f5373; 
+  }
+  
